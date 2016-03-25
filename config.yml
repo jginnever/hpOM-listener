@@ -1,0 +1,19 @@
+# Configuration file of HP OM REST API Extension
+
+# Location of opcmsg executable, e.g. "C:\\HP\\bin\\opcmsg"
+pathToExecutable: ""
+
+# Message group for HP OpenView opcmsg
+msgGroup: "AppDynamics"
+
+# Default server values
+server:
+    applicationConnectors:
+        - type: http
+          port: 8085
+        - type: https
+          port: 8443  
+          keyStorePath: //Library//Java//JavaVirtualMachines//jdk1.7.0_55.jdk//Contents//Home//jre//lib//security//cacerts
+          keyStorePassword: changeit
+          validateCerts: false
+    
