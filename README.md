@@ -7,7 +7,7 @@ reformatted to create a message and then sent to the HP Operations Manager.
 ## Things to Do
 
 *  Add opcmsg API to send message to HP Operations Manager.
-*  Add basic authentication.
+*  Add basic authentication - added on 4/7/2016 using http
 *  Add ability to store encrypted password.
 *  Add HTTPS support.
 *  Add logging.
