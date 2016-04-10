@@ -36,7 +36,8 @@ public class hpOMApplication extends Application<hpOMConfiguration> {
 		environment.jersey().register(new hpOMAPI());
 		environment.jersey().register(new AuthDynamicFeature(
 					new BasicCredentialAuthFilter.Builder<User>()
-		                .setAuthenticator(new hpOMAuthenticator())
+		                .setAuthenticator(new hpOMAuthenticator(configuration.getUserName(),
+		                		configuration.getPassword()))
 		                .setAuthorizer(new hpOMAuthorizer())
 		                .setRealm("SECURITY REALM")
 		                .buildAuthFilter()));

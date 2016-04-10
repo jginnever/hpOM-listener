@@ -1,0 +1,251 @@
+INFO  [2016-04-08 17:07:55,818] org.eclipse.jetty.util.log: Logging initialized @1310ms
+INFO  [2016-04-08 17:07:55,969] io.dropwizard.server.ServerFactory: Starting HP OM REST API
+================================================================================
+
+                              hpOM
+
+================================================================================
+
+
+INFO  [2016-04-08 17:07:55,981] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-04-08 17:07:56,002] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-04-08 17:07:56,209] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2016-04-08 17:07:56,209] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDHE_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, TLS_EMPTY_RENEGOTIATION_INFO_SCSV, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_ECDH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_ECDH_anon_WITH_RC4_128_SHA, SSL_DH_anon_WITH_RC4_128_MD5, TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA, SSL_DH_anon_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_NULL_SHA256, TLS_ECDHE_ECDSA_WITH_NULL_SHA, TLS_ECDHE_RSA_WITH_NULL_SHA, SSL_RSA_WITH_NULL_SHA, TLS_ECDH_ECDSA_WITH_NULL_SHA, TLS_ECDH_RSA_WITH_NULL_SHA, TLS_ECDH_anon_WITH_NULL_SHA, SSL_RSA_WITH_NULL_MD5, SSL_RSA_WITH_DES_CBC_SHA, SSL_DHE_RSA_WITH_DES_CBC_SHA, SSL_DHE_DSS_WITH_DES_CBC_SHA, SSL_DH_anon_WITH_DES_CBC_SHA, SSL_RSA_EXPORT_WITH_RC4_40_MD5, SSL_DH_anon_EXPORT_WITH_RC4_40_MD5, SSL_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA, SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA, TLS_KRB5_WITH_RC4_128_SHA, TLS_KRB5_WITH_RC4_128_MD5, TLS_KRB5_WITH_3DES_EDE_CBC_SHA, TLS_KRB5_WITH_3DES_EDE_CBC_MD5, TLS_KRB5_WITH_DES_CBC_SHA, TLS_KRB5_WITH_DES_CBC_MD5, TLS_KRB5_EXPORT_WITH_RC4_40_SHA, TLS_KRB5_EXPORT_WITH_RC4_40_MD5, TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA, TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5]
+INFO  [2016-04-08 17:07:56,237] org.eclipse.jetty.setuid.SetUIDListener: Opened application@78024cc6{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:07:56,237] org.eclipse.jetty.setuid.SetUIDListener: Opened application@5efe98b7{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:07:56,238] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@1cdc471a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:07:56,241] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-04-08 17:07:56,900] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /postMsg (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    POST    /postMsg/secured (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /postMsg/securedGet (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /version (com.appdynamics.extension.hpOM.resources.hpOMAPIVersion)
+
+INFO  [2016-04-08 17:07:56,902] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7ebf324{/,null,AVAILABLE}
+INFO  [2016-04-08 17:07:56,908] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2016-04-08 17:07:56,908] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2016-04-08 17:07:56,914] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@67d3f1cb{/,null,AVAILABLE}
+INFO  [2016-04-08 17:07:56,924] org.eclipse.jetty.server.ServerConnector: Started application@78024cc6{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:07:56,927] org.eclipse.jetty.server.ServerConnector: Started application@5efe98b7{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:07:56,927] org.eclipse.jetty.server.ServerConnector: Started admin@1cdc471a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:07:56,927] org.eclipse.jetty.server.Server: Started @2421ms
+INFO  [2016-04-08 17:12:53,840] org.eclipse.jetty.server.ServerConnector: Stopped application@78024cc6{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:12:53,842] org.eclipse.jetty.server.ServerConnector: Stopped application@5efe98b7{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:12:53,842] org.eclipse.jetty.server.ServerConnector: Stopped admin@1cdc471a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:12:53,843] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@67d3f1cb{/,null,UNAVAILABLE}
+INFO  [2016-04-08 17:12:53,847] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7ebf324{/,null,UNAVAILABLE}
+INFO  [2016-04-08 17:17:11,344] org.eclipse.jetty.util.log: Logging initialized @1270ms
+INFO  [2016-04-08 17:17:11,437] io.dropwizard.server.ServerFactory: Starting HP OM REST API
+================================================================================
+
+                              hpOM
+
+================================================================================
+
+
+INFO  [2016-04-08 17:17:11,445] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-04-08 17:17:11,459] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-04-08 17:17:11,666] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2016-04-08 17:17:11,666] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDHE_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, TLS_EMPTY_RENEGOTIATION_INFO_SCSV, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_ECDH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_ECDH_anon_WITH_RC4_128_SHA, SSL_DH_anon_WITH_RC4_128_MD5, TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA, SSL_DH_anon_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_NULL_SHA256, TLS_ECDHE_ECDSA_WITH_NULL_SHA, TLS_ECDHE_RSA_WITH_NULL_SHA, SSL_RSA_WITH_NULL_SHA, TLS_ECDH_ECDSA_WITH_NULL_SHA, TLS_ECDH_RSA_WITH_NULL_SHA, TLS_ECDH_anon_WITH_NULL_SHA, SSL_RSA_WITH_NULL_MD5, SSL_RSA_WITH_DES_CBC_SHA, SSL_DHE_RSA_WITH_DES_CBC_SHA, SSL_DHE_DSS_WITH_DES_CBC_SHA, SSL_DH_anon_WITH_DES_CBC_SHA, SSL_RSA_EXPORT_WITH_RC4_40_MD5, SSL_DH_anon_EXPORT_WITH_RC4_40_MD5, SSL_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA, SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA, TLS_KRB5_WITH_RC4_128_SHA, TLS_KRB5_WITH_RC4_128_MD5, TLS_KRB5_WITH_3DES_EDE_CBC_SHA, TLS_KRB5_WITH_3DES_EDE_CBC_MD5, TLS_KRB5_WITH_DES_CBC_SHA, TLS_KRB5_WITH_DES_CBC_MD5, TLS_KRB5_EXPORT_WITH_RC4_40_SHA, TLS_KRB5_EXPORT_WITH_RC4_40_MD5, TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA, TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5]
+INFO  [2016-04-08 17:17:11,686] org.eclipse.jetty.setuid.SetUIDListener: Opened application@41c00ac3{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:17:11,686] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2702a9ee{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:17:11,686] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@1fe25c44{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:17:11,689] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-04-08 17:17:12,243] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /postMsg (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    POST    /postMsg/secured (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /postMsg/securedGet (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /version (com.appdynamics.extension.hpOM.resources.hpOMAPIVersion)
+
+INFO  [2016-04-08 17:17:12,245] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@46e6e5f1{/,null,AVAILABLE}
+INFO  [2016-04-08 17:17:12,250] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2016-04-08 17:17:12,250] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2016-04-08 17:17:12,255] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3a183786{/,null,AVAILABLE}
+INFO  [2016-04-08 17:17:12,261] org.eclipse.jetty.server.ServerConnector: Started application@41c00ac3{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:17:12,264] org.eclipse.jetty.server.ServerConnector: Started application@2702a9ee{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:17:12,264] org.eclipse.jetty.server.ServerConnector: Started admin@1fe25c44{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:17:12,264] org.eclipse.jetty.server.Server: Started @2191ms
+INFO  [2016-04-08 17:27:44,134] org.eclipse.jetty.server.ServerConnector: Stopped application@41c00ac3{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:27:44,135] org.eclipse.jetty.server.ServerConnector: Stopped application@2702a9ee{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:27:44,136] org.eclipse.jetty.server.ServerConnector: Stopped admin@1fe25c44{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:27:44,137] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3a183786{/,null,UNAVAILABLE}
+INFO  [2016-04-08 17:27:44,141] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@46e6e5f1{/,null,UNAVAILABLE}
+INFO  [2016-04-08 17:27:48,318] org.eclipse.jetty.util.log: Logging initialized @1278ms
+INFO  [2016-04-08 17:27:48,411] io.dropwizard.server.ServerFactory: Starting HP OM REST API
+================================================================================
+
+                              hpOM
+
+================================================================================
+
+
+INFO  [2016-04-08 17:27:48,418] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-04-08 17:27:48,434] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-04-08 17:27:48,630] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2016-04-08 17:27:48,630] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDHE_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, TLS_EMPTY_RENEGOTIATION_INFO_SCSV, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_ECDH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_ECDH_anon_WITH_RC4_128_SHA, SSL_DH_anon_WITH_RC4_128_MD5, TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA, SSL_DH_anon_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_NULL_SHA256, TLS_ECDHE_ECDSA_WITH_NULL_SHA, TLS_ECDHE_RSA_WITH_NULL_SHA, SSL_RSA_WITH_NULL_SHA, TLS_ECDH_ECDSA_WITH_NULL_SHA, TLS_ECDH_RSA_WITH_NULL_SHA, TLS_ECDH_anon_WITH_NULL_SHA, SSL_RSA_WITH_NULL_MD5, SSL_RSA_WITH_DES_CBC_SHA, SSL_DHE_RSA_WITH_DES_CBC_SHA, SSL_DHE_DSS_WITH_DES_CBC_SHA, SSL_DH_anon_WITH_DES_CBC_SHA, SSL_RSA_EXPORT_WITH_RC4_40_MD5, SSL_DH_anon_EXPORT_WITH_RC4_40_MD5, SSL_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA, SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA, TLS_KRB5_WITH_RC4_128_SHA, TLS_KRB5_WITH_RC4_128_MD5, TLS_KRB5_WITH_3DES_EDE_CBC_SHA, TLS_KRB5_WITH_3DES_EDE_CBC_MD5, TLS_KRB5_WITH_DES_CBC_SHA, TLS_KRB5_WITH_DES_CBC_MD5, TLS_KRB5_EXPORT_WITH_RC4_40_SHA, TLS_KRB5_EXPORT_WITH_RC4_40_MD5, TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA, TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5]
+INFO  [2016-04-08 17:27:48,649] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1fe25c44{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:27:48,649] org.eclipse.jetty.setuid.SetUIDListener: Opened application@461784b6{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:27:48,650] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@3209ecad{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:27:48,652] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-04-08 17:27:49,195] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /postMsg (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    POST    /postMsg/secured (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /postMsg/securedGet (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /version (com.appdynamics.extension.hpOM.resources.hpOMAPIVersion)
+
+INFO  [2016-04-08 17:27:49,197] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1ffc159e{/,null,AVAILABLE}
+INFO  [2016-04-08 17:27:49,202] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2016-04-08 17:27:49,202] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2016-04-08 17:27:49,208] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@77b90119{/,null,AVAILABLE}
+INFO  [2016-04-08 17:27:49,214] org.eclipse.jetty.server.ServerConnector: Started application@1fe25c44{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:27:49,217] org.eclipse.jetty.server.ServerConnector: Started application@461784b6{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:27:49,217] org.eclipse.jetty.server.ServerConnector: Started admin@3209ecad{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:27:49,217] org.eclipse.jetty.server.Server: Started @2178ms
+ERROR [2016-04-08 17:28:25,209] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: c8c8f09247acda89
+! java.lang.NullPointerException: null
+! at com.appdynamics.extension.auth.hpOMAuthenticator.authenticate(hpOMAuthenticator.java:24) ~[classes/:na]
+! at com.appdynamics.extension.auth.hpOMAuthenticator.authenticate(hpOMAuthenticator.java:1) ~[classes/:na]
+! at io.dropwizard.auth.basic.BasicCredentialAuthFilter.filter(BasicCredentialAuthFilter.java:47) ~[dropwizard-auth-0.9.0.jar:0.9.0]
+! at org.glassfish.jersey.server.ContainerFilteringStage.apply(ContainerFilteringStage.java:132) ~[jersey-server-2.22.1.jar:na]
+! at org.glassfish.jersey.server.ContainerFilteringStage.apply(ContainerFilteringStage.java:68) ~[jersey-server-2.22.1.jar:na]
+! at org.glassfish.jersey.process.internal.Stages.process(Stages.java:197) ~[jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:318) ~[jersey-server-2.22.1.jar:na]
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271) [jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267) [jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315) [jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297) [jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:267) [jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317) [jersey-common-2.22.1.jar:na]
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305) [jersey-server-2.22.1.jar:na]
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154) [jersey-server-2.22.1.jar:na]
+! at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471) [jersey-container-servlet-core-2.22.1.jar:na]
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425) [jersey-container-servlet-core-2.22.1.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383) [jersey-container-servlet-core-2.22.1.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336) [jersey-container-servlet-core-2.22.1.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223) [jersey-container-servlet-core-2.22.1.jar:na]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [dropwizard-jetty-0.9.0.jar:0.9.0]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [jetty-servlets-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:300) [jetty-servlets-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:132) [dropwizard-jetty-0.9.0.jar:0.9.0]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [dropwizard-servlets-0.9.0.jar:0.9.0]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:43) [dropwizard-jersey-0.9.0.jar:0.9.0]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:38) [dropwizard-jersey-0.9.0.jar:0.9.0]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:240) [metrics-jetty9-3.1.2.jar:3.1.2]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [dropwizard-jetty-0.9.0.jar:0.9.0]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:95) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:159) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.Server.handle(Server.java:499) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540) [jetty-io-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_55]
+INFO  [2016-04-08 17:55:53,377] org.eclipse.jetty.server.ServerConnector: Stopped application@1fe25c44{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:55:53,378] org.eclipse.jetty.server.ServerConnector: Stopped application@461784b6{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:55:53,379] org.eclipse.jetty.server.ServerConnector: Stopped admin@3209ecad{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:55:53,380] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@77b90119{/,null,UNAVAILABLE}
+INFO  [2016-04-08 17:55:53,384] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1ffc159e{/,null,UNAVAILABLE}
+INFO  [2016-04-08 17:55:57,138] org.eclipse.jetty.util.log: Logging initialized @1277ms
+INFO  [2016-04-08 17:55:57,232] io.dropwizard.server.ServerFactory: Starting HP OM REST API
+================================================================================
+
+                              hpOM
+
+================================================================================
+
+
+INFO  [2016-04-08 17:55:57,241] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-04-08 17:55:57,256] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-04-08 17:55:57,484] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2016-04-08 17:55:57,484] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDHE_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, TLS_EMPTY_RENEGOTIATION_INFO_SCSV, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_ECDH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_ECDH_anon_WITH_RC4_128_SHA, SSL_DH_anon_WITH_RC4_128_MD5, TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA, SSL_DH_anon_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_NULL_SHA256, TLS_ECDHE_ECDSA_WITH_NULL_SHA, TLS_ECDHE_RSA_WITH_NULL_SHA, SSL_RSA_WITH_NULL_SHA, TLS_ECDH_ECDSA_WITH_NULL_SHA, TLS_ECDH_RSA_WITH_NULL_SHA, TLS_ECDH_anon_WITH_NULL_SHA, SSL_RSA_WITH_NULL_MD5, SSL_RSA_WITH_DES_CBC_SHA, SSL_DHE_RSA_WITH_DES_CBC_SHA, SSL_DHE_DSS_WITH_DES_CBC_SHA, SSL_DH_anon_WITH_DES_CBC_SHA, SSL_RSA_EXPORT_WITH_RC4_40_MD5, SSL_DH_anon_EXPORT_WITH_RC4_40_MD5, SSL_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA, SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA, TLS_KRB5_WITH_RC4_128_SHA, TLS_KRB5_WITH_RC4_128_MD5, TLS_KRB5_WITH_3DES_EDE_CBC_SHA, TLS_KRB5_WITH_3DES_EDE_CBC_MD5, TLS_KRB5_WITH_DES_CBC_SHA, TLS_KRB5_WITH_DES_CBC_MD5, TLS_KRB5_EXPORT_WITH_RC4_40_SHA, TLS_KRB5_EXPORT_WITH_RC4_40_MD5, TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA, TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5]
+INFO  [2016-04-08 17:55:57,503] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1fe25c44{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:55:57,503] org.eclipse.jetty.setuid.SetUIDListener: Opened application@461784b6{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:55:57,503] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@3209ecad{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:55:57,506] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-04-08 17:55:58,044] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /postMsg (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    POST    /postMsg/secured (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /postMsg/securedGet (com.appdynamics.extension.hpOM.resources.hpOMAPI)
+    GET     /version (com.appdynamics.extension.hpOM.resources.hpOMAPIVersion)
+
+INFO  [2016-04-08 17:55:58,046] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2f7f30a0{/,null,AVAILABLE}
+INFO  [2016-04-08 17:55:58,050] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2016-04-08 17:55:58,051] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2016-04-08 17:55:58,055] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2a0f331b{/,null,AVAILABLE}
+INFO  [2016-04-08 17:55:58,061] org.eclipse.jetty.server.ServerConnector: Started application@1fe25c44{HTTP/1.1}{0.0.0.0:8085}
+INFO  [2016-04-08 17:55:58,063] org.eclipse.jetty.server.ServerConnector: Started application@461784b6{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-04-08 17:55:58,064] org.eclipse.jetty.server.ServerConnector: Started admin@3209ecad{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-04-08 17:55:58,064] org.eclipse.jetty.server.Server: Started @2204ms
+INFO  [2016-04-08 17:56:12,341] com.appdynamics.extension.hpOM.resources.hpOMAPI: incomingData: {
+  "Message Group" : "AppDynamics",
+  "Application" : "Sample Application Name  | Sample Application Name  | Sample Tier  | Sample Node ",
+   "Object" : "Sample Health Rule",
+   "Severity" : "WARN",
+   "MsgText" : "EAI-1234: Sample Event Message"
+  }

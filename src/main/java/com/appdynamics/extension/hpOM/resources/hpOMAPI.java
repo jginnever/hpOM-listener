@@ -86,7 +86,7 @@ public class hpOMAPI {
 				// returnString = "OVO Message Sent (description): " +
 				// jsonData.optString("description")
 				// + " | OVO Message Sent (id): " + jsonData.optString("id");
-				returnString = "OVO Message Sent: ";
+				returnString = "Secure OVO Message Sent: ";
 			} else {
 				return Response.status(500).entity("Unable to process Item").build();
 			}

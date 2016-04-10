@@ -1,7 +1,10 @@
 # Configuration file of HP OM REST API Extension
+userName: "AppDynamics"
+password: "crimson"
 
 # Location of opcmsg executable, e.g. "C:\\HP\\bin\\opcmsg"
-pathToExecutable: ""
+pathToExecutable: "/Downloads/license.lic"
+
 
 # Message group for HP OpenView opcmsg
 msgGroup: "AppDynamics"
@@ -17,3 +20,26 @@ server:
           keyStorePassword: changeit
           validateCerts: false
     
+# Logging settings
+logging:
+  # The default level of all loggers. Can be OFF, ERROR, WARM, INFO, DEBUG, TRACE, or ALL
+  level: INFO
+  
+  # Logger-specific levels.
+  loggers:
+  
+    # Sets the level for 'com.example.app' to DEBUG
+    com.appdynamics.extension: DEBUG
+  
+  appenders:
+    - type: console
+    - type: syslog
+      threshold: INFO
+      host: localhost
+      port: 514
+      facility: local0
+    - type: file
+      currentLogFilename:  ./logs/hpOM.log
+      archivedLogFilenamePattern: ./logs/hpOM-%d.log.gz
+      archivedFileCount: 7
+
