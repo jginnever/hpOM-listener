@@ -1,4 +1,4 @@
 com/appdynamics/extension/hpOM/hpOMApplication.class
 com/appdynamics/extension/hpOM/hpOMConfiguration.class
-com/appdynamics/extension/hpOM/resources/hpOMAPI.class
 com/appdynamics/extension/hpOM/resources/hpOMAPIVersion.class
+com/appdynamics/extension/hpOM/resources/hpOMAPI.class

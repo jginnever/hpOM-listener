@@ -1,0 +1,1 @@
+java -jar target/hpOM-0.0.1-SNAPSHOT.jar server config.yml
