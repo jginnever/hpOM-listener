@@ -8,7 +8,7 @@ reformatted to create a message and then sent to the HP Operations Manager.
 
 *  Add opcmsg API to send message to HP Operations Manager.
 *  Add basic authentication - added on 4/7/2016 using http
-*  Add ability to store encrypted password.
+*  Add ability to store encrypted password - added ability to store password in config.yml
 *  Add HTTPS support.
 *  Add logging.
 *  Add health check URL to determine health of hpOM Listener
