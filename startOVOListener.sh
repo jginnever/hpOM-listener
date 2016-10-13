@@ -1,1 +1,1 @@
-java -jar target/hpOM-0.0.1-SNAPSHOT.jar server config.yml
+java -jar hpOMListener-v1.4.2.jar server config.yml 

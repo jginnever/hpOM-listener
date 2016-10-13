@@ -6,7 +6,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+	<classpathentry kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -32,5 +32,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Volumes/Jack little SD Card/MacPro/Eclipse/com.appdynamics.extensions.hpovorest.api/WebContent/WEB-INF/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/jack.ginnever/.m2/repository/org/apache/commons/commons-exec/1.2/commons-exec-1.2.jar"/>
+	<classpathentry kind="lib" path="/Volumes/Jack little SD Card/MacPro/Eclipse/hpOM/java-json.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

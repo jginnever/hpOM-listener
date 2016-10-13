@@ -3,7 +3,7 @@ userName: "AppDynamics"
 password: "crimson"
 
 # Location of opcmsg executable, e.g. "C:\\HP\\bin\\opcmsg"
-pathToExecutable: "/Downloads/license.lic"
+pathToExecutable: "/Downloads/helloMikes.sh"
 
 
 # Message group for HP OpenView opcmsg
@@ -13,12 +13,14 @@ msgGroup: "AppDynamics"
 server:
     applicationConnectors:
         - type: http
-          port: 8085
+          port: 8083
         - type: https
           port: 8443  
-          keyStorePath: //Library//Java//JavaVirtualMachines//jdk1.7.0_55.jdk//Contents//Home//jre//lib//security//cacerts
-          keyStorePassword: changeit
+          keyStorePath: hpOM.keystore
+          keyStorePassword: changeme
+          needClientAuth: false
           validateCerts: false
+          wantClientAuth: false
     
 # Logging settings
 logging:

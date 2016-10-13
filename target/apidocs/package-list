@@ -2,3 +2,6 @@ com.appdynamics.extension.auth
 com.appdynamics.extension.hpOM
 com.appdynamics.extension.hpOM.core
 com.appdynamics.extension.hpOM.resources
+com.appdynamics.extension.hpopenview
+com.appdynamics.extension.hpopenview.api
+com.appdynamics.extension.hpopenview.common

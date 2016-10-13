@@ -1,4 +1,4 @@
 git add -A
 git status
-git commit -m "changed to add user/password to config for basic authentication"
-git push -u origin add-OVO-collab
+git commit -m "added command executor code and changed JSON parsing"
+git push -u origin merge-all-code
