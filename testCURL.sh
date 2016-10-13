@@ -1,0 +1,1 @@
+curl -v -H "Content-Type: application/json" -X POST --data-binary @testMessage.json -u AppDynamics:crimson https://localhost:8443/postMsg/secured -k

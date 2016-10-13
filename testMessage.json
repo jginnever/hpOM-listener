@@ -1,0 +1,7 @@
+{
+  "MessageGroup":"AppDynamics",
+  "Object":"AppDynamics Object",
+  "MsgText":"AppDynamics detailed message text",
+  "Application":"EAI Number put here",
+  "Severity":"Severe"
+}  
