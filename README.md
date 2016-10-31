@@ -26,6 +26,12 @@ This web service assumes that a JSON payload is sent with these name/value pairs
 *  Object - the AppDynamics health rule that was violated to produce the event
 *  Severity - the severity of the event
 *  MsgText - the event detailed message
+*  Node - the host of the violating process
 
 This web service is meant to be called from the AppDynamics HTTP Request Action - 
-https://docs.appdynamics.com/display/PRO42/HTTP+Request+Actions+and+Templates  
+https://docs.appdynamics.com/display/PRO42/HTTP+Request+Actions+and+Templates 
+
+A jar file is included if there is a need to generate an encrypted password for the basic authentication.
+To generate an encrypted password run the following command:
+
+java -cp "appd-exts-commons-1.1.2.jar" com.appdynamics.extensions.crypto.Encryptor myKey myPassword
