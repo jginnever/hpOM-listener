@@ -1,32 +1,32 @@
-INFO  [2016-10-13 12:26:28,790] org.eclipse.jetty.util.log: Logging initialized @3246ms
-INFO  [2016-10-13 12:26:28,937] io.dropwizard.server.ServerFactory: Starting HP OM REST API
+INFO  [2016-10-31 00:20:42,870] org.eclipse.jetty.util.log: Logging initialized @1865ms
+INFO  [2016-10-31 00:20:43,016] io.dropwizard.server.ServerFactory: Starting HP OM REST API
  ___            ___                        _            _    _        _                       
 | . | ___  ___ | . \ _ _ ._ _  ___ ._ _ _ <_> ___  ___ | |  <_> ___ _| |_  ___ ._ _  ___  _ _ 
 |   || . \| . \| | || | || ' |<_> || ' ' || |/ | '<_-< | |_ | |<_-<  | |  / ._>| ' |/ ._>| '_>
 |_|_||  _/|  _/|___/`_. ||_|_|<___||_|_|_||_|\_|_./__/ |___||_|/__/  |_|  \___.|_|_|\___.|_|  
      |_|  |_|       <___'                                                                     
-INFO  [2016-10-13 12:26:28,951] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2016-10-13 12:26:28,984] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2016-10-13 12:26:29,227] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
-INFO  [2016-10-13 12:26:29,227] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDHE_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, TLS_EMPTY_RENEGOTIATION_INFO_SCSV, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_ECDH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_ECDH_anon_WITH_RC4_128_SHA, SSL_DH_anon_WITH_RC4_128_MD5, TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA, SSL_DH_anon_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_NULL_SHA256, TLS_ECDHE_ECDSA_WITH_NULL_SHA, TLS_ECDHE_RSA_WITH_NULL_SHA, SSL_RSA_WITH_NULL_SHA, TLS_ECDH_ECDSA_WITH_NULL_SHA, TLS_ECDH_RSA_WITH_NULL_SHA, TLS_ECDH_anon_WITH_NULL_SHA, SSL_RSA_WITH_NULL_MD5, SSL_RSA_WITH_DES_CBC_SHA, SSL_DHE_RSA_WITH_DES_CBC_SHA, SSL_DHE_DSS_WITH_DES_CBC_SHA, SSL_DH_anon_WITH_DES_CBC_SHA, SSL_RSA_EXPORT_WITH_RC4_40_MD5, SSL_DH_anon_EXPORT_WITH_RC4_40_MD5, SSL_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA, SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA, TLS_KRB5_WITH_RC4_128_SHA, TLS_KRB5_WITH_RC4_128_MD5, TLS_KRB5_WITH_3DES_EDE_CBC_SHA, TLS_KRB5_WITH_3DES_EDE_CBC_MD5, TLS_KRB5_WITH_DES_CBC_SHA, TLS_KRB5_WITH_DES_CBC_MD5, TLS_KRB5_EXPORT_WITH_RC4_40_SHA, TLS_KRB5_EXPORT_WITH_RC4_40_MD5, TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA, TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5]
-INFO  [2016-10-13 12:26:29,266] org.eclipse.jetty.setuid.SetUIDListener: Opened application@50fcf2c1{HTTP/1.1}{0.0.0.0:8083}
-INFO  [2016-10-13 12:26:29,266] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ea58671{SSL-HTTP/1.1}{0.0.0.0:8443}
-INFO  [2016-10-13 12:26:29,266] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@151d6c3a{HTTP/1.1}{0.0.0.0:8081}
-INFO  [2016-10-13 12:26:29,271] org.eclipse.jetty.server.Server: jetty-9.2.z-SNAPSHOT
-INFO  [2016-10-13 12:26:30,223] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+INFO  [2016-10-31 00:20:43,029] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-10-31 00:20:43,063] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-10-31 00:20:43,285] io.dropwizard.jetty.HttpsConnectorFactory: Supported protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+INFO  [2016-10-31 00:20:43,285] io.dropwizard.jetty.HttpsConnectorFactory: Supported cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, TLS_ECDHE_RSA_WITH_RC4_128_SHA, SSL_RSA_WITH_RC4_128_SHA, TLS_ECDH_ECDSA_WITH_RC4_128_SHA, TLS_ECDH_RSA_WITH_RC4_128_SHA, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_RC4_128_MD5, TLS_EMPTY_RENEGOTIATION_INFO_SCSV, TLS_DH_anon_WITH_AES_128_CBC_SHA256, TLS_ECDH_anon_WITH_AES_128_CBC_SHA, TLS_DH_anon_WITH_AES_128_CBC_SHA, TLS_ECDH_anon_WITH_RC4_128_SHA, SSL_DH_anon_WITH_RC4_128_MD5, TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA, SSL_DH_anon_WITH_3DES_EDE_CBC_SHA, TLS_RSA_WITH_NULL_SHA256, TLS_ECDHE_ECDSA_WITH_NULL_SHA, TLS_ECDHE_RSA_WITH_NULL_SHA, SSL_RSA_WITH_NULL_SHA, TLS_ECDH_ECDSA_WITH_NULL_SHA, TLS_ECDH_RSA_WITH_NULL_SHA, TLS_ECDH_anon_WITH_NULL_SHA, SSL_RSA_WITH_NULL_MD5, SSL_RSA_WITH_DES_CBC_SHA, SSL_DHE_RSA_WITH_DES_CBC_SHA, SSL_DHE_DSS_WITH_DES_CBC_SHA, SSL_DH_anon_WITH_DES_CBC_SHA, SSL_RSA_EXPORT_WITH_RC4_40_MD5, SSL_DH_anon_EXPORT_WITH_RC4_40_MD5, SSL_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA, SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA, SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA, TLS_KRB5_WITH_RC4_128_SHA, TLS_KRB5_WITH_RC4_128_MD5, TLS_KRB5_WITH_3DES_EDE_CBC_SHA, TLS_KRB5_WITH_3DES_EDE_CBC_MD5, TLS_KRB5_WITH_DES_CBC_SHA, TLS_KRB5_WITH_DES_CBC_MD5, TLS_KRB5_EXPORT_WITH_RC4_40_SHA, TLS_KRB5_EXPORT_WITH_RC4_40_MD5, TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA, TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5]
+INFO  [2016-10-31 00:20:43,315] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4772e1c3{HTTP/1.1}{0.0.0.0:8083}
+INFO  [2016-10-31 00:20:43,315] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4743edda{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-10-31 00:20:43,316] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@3cb4a7c3{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-10-31 00:20:43,320] org.eclipse.jetty.server.Server: jetty-9.2.z-SNAPSHOT
+INFO  [2016-10-31 00:20:44,374] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     POST    /postMsg (com.appdynamics.extension.hpOM.resources.hpOMAPI)
     POST    /postMsg/secured (com.appdynamics.extension.hpOM.resources.hpOMAPI)
     GET     /postMsg/securedGet (com.appdynamics.extension.hpOM.resources.hpOMAPI)
     GET     /version (com.appdynamics.extension.hpOM.resources.hpOMAPIVersion)
 
-INFO  [2016-10-13 12:26:30,226] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@35bb43c5{/,null,AVAILABLE}
-INFO  [2016-10-13 12:26:30,233] io.dropwizard.setup.AdminEnvironment: tasks = 
+INFO  [2016-10-31 00:20:44,376] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6a17dce6{/,null,AVAILABLE}
+INFO  [2016-10-31 00:20:44,387] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
-WARN  [2016-10-13 12:26:30,234] io.dropwizard.setup.AdminEnvironment: 
+WARN  [2016-10-31 00:20:44,387] io.dropwizard.setup.AdminEnvironment: 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
@@ -35,10 +35,15 @@ WARN  [2016-10-13 12:26:30,234] io.dropwizard.setup.AdminEnvironment:
 !         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-INFO  [2016-10-13 12:26:30,242] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@44a11b76{/,null,AVAILABLE}
-INFO  [2016-10-13 12:26:30,252] org.eclipse.jetty.server.ServerConnector: Started application@50fcf2c1{HTTP/1.1}{0.0.0.0:8083}
-INFO  [2016-10-13 12:26:30,254] org.eclipse.jetty.server.ServerConnector: Started application@ea58671{SSL-HTTP/1.1}{0.0.0.0:8443}
-INFO  [2016-10-13 12:26:30,254] org.eclipse.jetty.server.ServerConnector: Started admin@151d6c3a{HTTP/1.1}{0.0.0.0:8081}
-INFO  [2016-10-13 12:26:30,254] org.eclipse.jetty.server.Server: Started @4711ms
-INFO  [2016-10-13 12:27:14,188] com.appdynamics.extension.hpOM.resources.hpOMAPI: incomingData -  Message Group - AppDynamics, Application - EAI Number put here, Object - AppDynamics Object, Severity - Severe, MsgText - AppDynamics detailed message text
-INFO  [2016-10-13 12:27:14,191] com.appdynamics.extension.hpopenview.common.CommandExecutor: Command to be executed is :: /Downloads/helloMikes.sh application="EAI Number put here" severity=Severe object="AppDynamics Object" msg_grp=AppDynamics msg_text="AppDynamics detailed message text" 
+INFO  [2016-10-31 00:20:44,400] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@53276b75{/,null,AVAILABLE}
+INFO  [2016-10-31 00:20:44,410] org.eclipse.jetty.server.ServerConnector: Started application@4772e1c3{HTTP/1.1}{0.0.0.0:8083}
+INFO  [2016-10-31 00:20:44,412] org.eclipse.jetty.server.ServerConnector: Started application@4743edda{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-10-31 00:20:44,413] org.eclipse.jetty.server.ServerConnector: Started admin@3cb4a7c3{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-10-31 00:20:44,413] org.eclipse.jetty.server.Server: Started @3409ms
+INFO  [2016-10-31 00:24:43,236] com.appdynamics.extension.hpOM.resources.hpOMAPI: incomingData -  Message Group - AppDynamics, Application - Sample Application Name  | Sample Application Name  | Sample Tier  | Sample Node , Object - Sample Health Rule, Severity - WARN, MsgText - EAI-1234:Sample Event Message, Node - Sample Node
+INFO  [2016-10-31 00:24:43,240] com.appdynamics.extension.hpopenview.common.CommandExecutor: Command to be executed is :: /Downloads/helloMikes.sh application="Sample Application Name  | Sample Application Name  | Sample Tier  | Sample Node " severity=WARN object="Sample Health Rule" msg_grp=AppDynamics msg_text="EAI-1234:Sample Event Message" 
+INFO  [2016-10-31 00:41:29,683] org.eclipse.jetty.server.ServerConnector: Stopped application@4772e1c3{HTTP/1.1}{0.0.0.0:8083}
+INFO  [2016-10-31 00:41:29,686] org.eclipse.jetty.server.ServerConnector: Stopped application@4743edda{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-10-31 00:41:29,687] org.eclipse.jetty.server.ServerConnector: Stopped admin@3cb4a7c3{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-10-31 00:41:29,689] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@53276b75{/,null,UNAVAILABLE}
+INFO  [2016-10-31 00:41:29,694] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@6a17dce6{/,null,UNAVAILABLE}

@@ -1,7 +1,5 @@
 package com.appdynamics.extension.hpOM.resources;
 
-//import java.io.File;
-//import java.io.FileNotFoundException;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -39,25 +37,18 @@ public class hpOMAPI
 	public Response postOVO(String incomingData) throws Exception {
 
 		String returnString = null;
-		//JsonNode nodeObject;
-	    //ObjectMapper mapper = new ObjectMapper();
 		
 		try {
 			System.out.println("incomingData: Message Group - " + incomingData);			
 			JSONObject jsonData = new JSONObject(incomingData);
-		    //nodeObject = mapper.readTree(incomingData);
 
 			Alert alert = new Alert();
-			//alert.setApplication(nodeObject.get("Application").textValue());
-			//alert.setMsgGroup(nodeObject.get("MessageGroup").textValue());
-			//alert.setObject(nodeObject.get("Object").textValue());
-			//alert.setSeverity(nodeObject.get("Severity").textValue());
-			//alert.setMsgText(nodeObject.get("MsgText").textValue());
     		alert.setApplication(jsonData.getString("Application"));
     		alert.setMsgGroup(jsonData.getString("MessageGroup"));
     		alert.setObject(jsonData.getString("Object"));
     		alert.setSeverity(jsonData.getString("Severity"));
     		alert.setMsgText(jsonData.getString("MsgText"));    	    		
+    		alert.setNode(jsonData.getString("Node"));    
 
 			logger.info("incomingData - " 
 				+ " Message Group - " + alert.getMsgGroup()	
@@ -65,6 +56,7 @@ public class hpOMAPI
 				+ ", Object - " + alert.getObject()
 				+ ", Severity - " + alert.getSeverity()
 				+ ", MsgText - " + alert.getMsgText()
+				+ ", Node - " + alert.getNode()				
 			);
     					
 			if (processAlert(alert)) 
@@ -92,25 +84,18 @@ public class hpOMAPI
 	public Response postAuthOVO(@Auth User user, String incomingData) throws Exception {
 
 		String returnString = null;
-		//JsonNode nodeObject;
-	    //ObjectMapper mapper = new ObjectMapper();
 		
 		try {
 			System.out.println("incomingData: Message Group - " + incomingData);			
 			JSONObject jsonData = new JSONObject(incomingData);
-		    //nodeObject = mapper.readTree(incomingData);
 
 			Alert alert = new Alert();
-			//alert.setApplication(nodeObject.get("Application").textValue());
-			//alert.setMsgGroup(nodeObject.get("MessageGroup").textValue());
-			//alert.setObject(nodeObject.get("Object").textValue());
-			//alert.setSeverity(nodeObject.get("Severity").textValue());
-			//alert.setMsgText(nodeObject.get("MsgText").textValue());
     		alert.setApplication(jsonData.getString("Application"));
     		alert.setMsgGroup(jsonData.getString("MessageGroup"));
     		alert.setObject(jsonData.getString("Object"));
     		alert.setSeverity(jsonData.getString("Severity"));
     		alert.setMsgText(jsonData.getString("MsgText"));    	    		
+    		alert.setNode(jsonData.getString("Node"));    
     		
 			logger.info("incomingData - " 
 				+ " Message Group - " + alert.getMsgGroup()	
@@ -118,6 +103,7 @@ public class hpOMAPI
 				+ ", Object - " + alert.getObject()
 				+ ", Severity - " + alert.getSeverity()
 				+ ", MsgText - " + alert.getMsgText()
+				+ ", Node - " + alert.getNode()				
 			);
     		
 			

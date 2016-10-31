@@ -1,6 +1,6 @@
 # Configuration file of HP OM REST API Extension
 userName: "AppDynamics"
-password: "crimson"
+password: "p@ssw0rd!"
 
 # Location of opcmsg executable, e.g. "C:\\HP\\bin\\opcmsg"
 pathToExecutable: "/Downloads/helloMikes.sh"
