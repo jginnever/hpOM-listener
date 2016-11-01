@@ -42,3 +42,8 @@ INFO  [2016-10-31 15:57:59,206] org.eclipse.jetty.server.ServerConnector: Starte
 INFO  [2016-10-31 15:57:59,206] org.eclipse.jetty.server.Server: Started @3425ms
 INFO  [2016-10-31 16:10:59,553] com.appdynamics.extension.hpOM.resources.hpOMAPI: incomingData -  Message Group - AppDynamics, Application - Sample Application Name  | Sample Application Name  | Sample Tier  | Sample Node , Object - Sample Health Rule, Severity - WARN, MsgText - EAI-1234:Sample Event Message, Node - Sample Node
 INFO  [2016-10-31 16:10:59,557] com.appdynamics.extension.hpopenview.common.CommandExecutor: Command to be executed is :: /Downloads/helloMikes.sh application="Sample Application Name  | Sample Application Name  | Sample Tier  | Sample Node " severity=WARN object="Sample Health Rule" msg_grp=AppDynamics msg_text="EAI-1234:Sample Event Message" node="Sample Node" 
+INFO  [2016-11-01 01:00:13,049] org.eclipse.jetty.server.ServerConnector: Stopped application@34b92c76{HTTP/1.1}{0.0.0.0:8083}
+INFO  [2016-11-01 01:00:13,055] org.eclipse.jetty.server.ServerConnector: Stopped application@69161204{SSL-HTTP/1.1}{0.0.0.0:8443}
+INFO  [2016-11-01 01:00:13,056] org.eclipse.jetty.server.ServerConnector: Stopped admin@27f8fa82{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-11-01 01:00:13,059] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@a00024d{/,null,UNAVAILABLE}
+INFO  [2016-11-01 01:00:13,065] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@40352198{/,null,UNAVAILABLE}

@@ -3,5 +3,6 @@
   "Object":"AppDynamics Object",
   "MsgText":"AppDynamics detailed message text",
   "Application":"EAI Number put here",
-  "Severity":"Severe"
+  "Severity":"Severe",
+  "Node":"Test Node"
 }  
