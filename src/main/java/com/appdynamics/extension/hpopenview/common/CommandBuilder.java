@@ -19,6 +19,7 @@ public class CommandBuilder {
         command.addArgument(CommandConstants.OBJECT + EQUALS_SEPARATOR + QUOTE_STR + alert.getObject() + QUOTE_STR,false);
         command.addArgument(CommandConstants.MESSAGE_GROUP + EQUALS_SEPARATOR + alert.getMsgGroup(),false);
         command.addArgument(CommandConstants.MESSAGE_TEXT + EQUALS_SEPARATOR + QUOTE_STR + alert.getMsgText() + QUOTE_STR,false);
+        command.addArgument(CommandConstants.NODE + EQUALS_SEPARATOR + QUOTE_STR + alert.getNode() + QUOTE_STR,false);
         return command;
     }
 
