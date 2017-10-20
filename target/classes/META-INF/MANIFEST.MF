@@ -1,4 +1,5 @@
 Manifest-Version: 1.0
+Built-By: jack.ginnever
 Class-Path: dropwizard-core-0.9.0.jar dropwizard-util-0.9.0.jar jackso
  n-annotations-2.6.0.jar guava-18.0.jar jsr305-3.0.1.jar joda-time-2.9
  .jar dropwizard-jackson-0.9.0.jar jackson-core-2.6.3.jar jackson-data
@@ -32,8 +33,7 @@ Class-Path: dropwizard-core-0.9.0.jar dropwizard-util-0.9.0.jar jackso
  re-3.1.2.jar metrics-jvm-3.1.2.jar metrics-servlets-3.1.2.jar metrics
  -json-3.1.2.jar metrics-healthchecks-3.1.2.jar argparse4j-0.6.0.jar j
  etty-setuid-java-1.0.3.jar dropwizard-auth-0.9.0.jar
-Build-Jdk: 1.7.0_55
-Built-By: jack.ginnever
+Build-Jdk: 1.8.0_121
 Created-By: Maven Integration for Eclipse
 Main-Class: com.appdynamics.extension.hpOM.hpOMApplication
 

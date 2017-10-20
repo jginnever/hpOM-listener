@@ -12,8 +12,6 @@ public class Alert {
 	
     private String msgGroup;
 
-    private String node;
-
     public String getApplication() {
 		return application;
 	}
@@ -55,11 +53,4 @@ public class Alert {
         this.msgGroup = msgGroup;
     }
 
-    public String getNode() {
-        return node;
-    }
-
-    public void setNode(String node) {
-        this.node = node;
-    }
 }

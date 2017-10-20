@@ -24,10 +24,12 @@ public class hpOMAPI
 {
 	private static Logger logger = Logger.getLogger(hpOMAPI.class);
 	protected static String commandPath;
+	protected static String[] appls;
 	
-	public hpOMAPI (String pathToExecutable)
+	public hpOMAPI (String pathToExecutable, String[] acceptableAppls)
 	{
 		commandPath = pathToExecutable;
+		appls = acceptableAppls; 
 	}
 	
 	@POST
@@ -43,29 +45,35 @@ public class hpOMAPI
 			JSONObject jsonData = new JSONObject(incomingData);
 
 			Alert alert = new Alert();
-    		alert.setApplication(jsonData.getString("Application"));
-    		alert.setMsgGroup(jsonData.getString("MessageGroup"));
-    		alert.setObject(jsonData.getString("Object"));
-    		alert.setSeverity(jsonData.getString("Severity"));
-    		alert.setMsgText(jsonData.getString("MsgText"));    	    		
-    		alert.setNode(jsonData.getString("Node"));    
+    		alert.setApplication(jsonData.getString("Application").trim());
+    		alert.setMsgGroup(jsonData.getString("MessageGroup").trim());
+    		alert.setObject(jsonData.getString("Object").trim());
+    		alert.setSeverity(jsonData.getString("Severity").trim());
+    		alert.setMsgText(jsonData.getString("MsgText").trim());    	    		  
 
 			logger.info("incomingData - " 
 				+ " Message Group - " + alert.getMsgGroup()	
 				+ ", Application - " + alert.getApplication()
 				+ ", Object - " + alert.getObject()
 				+ ", Severity - " + alert.getSeverity()
-				+ ", MsgText - " + alert.getMsgText()
-				+ ", Node - " + alert.getNode()				
+				+ ", MsgText - " + alert.getMsgText()			
 			);
-    					
-			if (processAlert(alert)) 
+ 
+			if (checkApplication(alert.getApplication()))
 			{
-				logger.info("Message Sent");			
+				if (processAlert(alert)) 
+				{
+					logger.info("Message Sent");	
+					return Response.ok(returnString).build();
+				} else {
+					logger.info("Unable to process message");
+					return Response.status(500).entity("Unable to process message").build();
+				}
+			
 			} else {
-				logger.info("Unable to process message");
-				return Response.status(500).entity("Unable to process message").build();
-			}
+				logger.info("Cannot process request.  Application group is not allowed.");
+				return Response.status(500).entity("Unable to process Item").build();
+			}			
 		} catch (Exception e) {
 			e.printStackTrace();
 			return Response.status(500)
@@ -73,7 +81,6 @@ public class hpOMAPI
 					.build();
 		}
 
-		return Response.ok(returnString).build();
 	}
 
 	@POST
@@ -90,37 +97,40 @@ public class hpOMAPI
 			JSONObject jsonData = new JSONObject(incomingData);
 
 			Alert alert = new Alert();
-    		alert.setApplication(jsonData.getString("Application"));
-    		alert.setMsgGroup(jsonData.getString("MessageGroup"));
-    		alert.setObject(jsonData.getString("Object"));
-    		alert.setSeverity(jsonData.getString("Severity"));
-    		alert.setMsgText(jsonData.getString("MsgText"));    	    		
-    		alert.setNode(jsonData.getString("Node"));    
+    		alert.setApplication(jsonData.getString("Application").trim());
+    		alert.setMsgGroup(jsonData.getString("MessageGroup").trim());
+    		alert.setObject(jsonData.getString("Object").trim());
+    		alert.setSeverity(jsonData.getString("Severity").trim());
+    		alert.setMsgText(jsonData.getString("MsgText").trim());    	    		    
     		
 			logger.info("incomingData - " 
 				+ " Message Group - " + alert.getMsgGroup()	
 				+ ", Application - " + alert.getApplication()
 				+ ", Object - " + alert.getObject()
 				+ ", Severity - " + alert.getSeverity()
-				+ ", MsgText - " + alert.getMsgText()
-				+ ", Node - " + alert.getNode()				
+				+ ", MsgText - " + alert.getMsgText()		
 			);
     		
-			
-			if (processAlert(alert)) 
+			if (checkApplication(alert.getApplication()))
 			{
-				returnString = "{\"Message\" : \"Secure OVO Message Sent\"}";
+				if (processAlert(alert)) 
+				{
+					returnString = "{\"Message\" : \"Secure OVO Message Sent\"}";
+					return Response.ok(returnString).build();
+				} else {
+					return Response.status(500).entity("Unable to process Item").build();
+				}
 			} else {
+				logger.info("Cannot process request.  Application group is not allowed.");
 				return Response.status(500).entity("Unable to process Item").build();
 			}
-
 		} catch (Exception e) {
-			e.printStackTrace();
-			return Response.status(500)
-					.entity("Server was not able to process your request.  Please check the format of your request.")
-					.build();
+				e.printStackTrace();
+				return Response.status(500)
+						.entity("Server was not able to process your request.  Please check the format of your request.")
+						.build();
 		}
-		return Response.ok(returnString).build();
+	
 	}
 	
 	private boolean processAlert(Alert alert) 
@@ -149,6 +159,20 @@ public class hpOMAPI
 		}
 
 		return true;
+
+	}	
+
+	private boolean checkApplication(String appl_passed) 
+	{
+		int j = appls.length;
+		boolean found = false;
+		for (int i=0;i<j && found==false; i++)
+		{
+			if (appl_passed.equals(appls[i]))
+				found = true;
+		}
+		
+		return found;
 
 	}	
 	

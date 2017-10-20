@@ -14,7 +14,7 @@ public class hpOMAPIVersion {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getGreeting() {
-		return "HP OM REST API version 1.0";
+		return "HP OM REST API version 1.1";
 	}
 
 }

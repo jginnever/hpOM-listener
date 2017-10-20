@@ -4,7 +4,7 @@
   <groupId>com.appdynamics.extension</groupId>
   <artifactId>hpOM</artifactId>
   <name>hpOM</name>
-  <version>1.0.0</version>
+  <version>1.7.0</version>
   <prerequisites>
     <maven>3.0.0</maven>
   </prerequisites>

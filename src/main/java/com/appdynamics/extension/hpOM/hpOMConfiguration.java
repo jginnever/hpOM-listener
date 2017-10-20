@@ -12,11 +12,10 @@ public class hpOMConfiguration extends Configuration {
 
 	@NotEmpty
 	private String msgGroup;
-	
     private String userName;
-    
     private String password;
-    	
+    private String[] applGroups;
+    
 
 	@JsonProperty
 	public String getpathToExecutable() {
@@ -36,6 +35,10 @@ public class hpOMConfiguration extends Configuration {
 	@JsonProperty
     public String getPassword() {
         return password;
+    }
+	@JsonProperty
+    public String[] getapplGroups() {
+        return applGroups;
     }
 
 

@@ -9,6 +9,9 @@ pathToExecutable: "/Downloads/helloMikes.sh"
 # Message group for HP OpenView opcmsg
 msgGroup: "AppDynamics"
 
+#List of AppD Application Groups that are allowed to use this Listener
+applGroups: ["SU-SEFS-RELY","OFFICE-Retail","CORE"]
+
 # Default server values
 server:
     applicationConnectors:

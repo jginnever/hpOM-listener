@@ -33,7 +33,7 @@ public class hpOMApplication extends Application<hpOMConfiguration> {
 	@Override
 	public void run(final hpOMConfiguration configuration, final Environment environment) {
 		environment.jersey().register(new hpOMAPIVersion());
-		environment.jersey().register(new hpOMAPI(configuration.getpathToExecutable()));
+		environment.jersey().register(new hpOMAPI(configuration.getpathToExecutable(), configuration.getapplGroups()));
 		environment.jersey().register(new AuthDynamicFeature(
 					new BasicCredentialAuthFilter.Builder<User>()
 		                .setAuthenticator(new hpOMAuthenticator(configuration.getUserName(),
